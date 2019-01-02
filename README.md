@@ -1,10 +1,6 @@
 # timetable-easy-download
 A python script to download the latest timetable from my college's website.
 
-NOTE: This project is under development and has bugs with the download service.
-      For some reason, the download is not working.
-      Stay tuned for fixes.
-
 This script does the following things:
 1. Deletes already existing timetable.pdf.
 2. Downloads a new timetable.pdf.
@@ -12,3 +8,12 @@ This script does the following things:
     Here, since I am in the CSE branch, I chose page number 5 (page number starts from 0), which shows me my timetable.
     Change the page number as per your stream.
 4. Opens the timetable.pdf.
+
+What you need to do:
+1. Make sure you have Python 3 (and add it in system path).
+2. Install pyPdf2 [```pip install pyPdf2```]
+3. Change the address given in timetable.bat file.
+4. Change the hardcoded values (url, addresses) if required.
+5. Add the timetable.bat file in system path.
+
+NOTE: The timetable will be created in the folder you open your cmd window to run ```timetable``` command.
