@@ -1,6 +1,7 @@
 import urllib.request
 from PyPDF2 import PdfFileReader, PdfFileWriter
 import os
+import ctypes
 
 url = "http://www.iiitd.ac.in/sites/default/files/docs/education/2019/Time%20Table-Add-Drop-Winter%202019V4.pdf"
 
@@ -22,3 +23,5 @@ if os.path.exists("timetable.pdf"):
     os.remove("timetable.pdf")
 
 os.rename("timetable2.pdf", "timetable.pdf")
+
+ctypes.windll.user32.MessageBoxW(0,"Succesfully fetched the latest timetable for CSE 2nd Year!","Success",0)
