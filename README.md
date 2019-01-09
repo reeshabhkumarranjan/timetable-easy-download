@@ -11,9 +11,10 @@ This script does the following things:
 
 What you need to do:
 1. Make sure you have Python 3 (and add it in system path).
-2. Install pyPdf2 [```pip install pyPdf2```]
-3. Change the address given in timetable.bat file.
-4. Change the hardcoded values (url, addresses) if required.
-5. Add the timetable.bat file in system path.
+2. In my batch file, I have used a ```python3 location\to\python\file```. You might have different PATH name for the Python 3 executable file. Please make sure you modify this particular line of the batch file.
+3. Install pyPdf2 [```pip install pyPdf2```]
+4. Change the address given in timetable.bat file.
+5. Change the hardcoded values (url, addresses) if required.
+6. Add the timetable.bat file in system path.
 
 NOTE: The timetable will be created in the folder you open your cmd window to run ```timetable``` command.
